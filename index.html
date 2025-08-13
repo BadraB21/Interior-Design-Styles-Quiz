@@ -1,0 +1,647 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Interior Design Quiz</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        h1, h2 { text-align: center; }
+        .question { margin-bottom: 40px; }
+        .answers img { width: 200px; height: auto; display: block; margin: 10px auto; }
+        .answers label { display: block; text-align: center; margin-bottom: 20px; }
+        .deckblatt { text-align: center; margin-bottom: 40px; }
+        .deckblatt img { max-width: 600px; height: auto; }
+        .result { margin-top: 40px; padding: 20px; border-top: 2px solid #ccc; }
+    </style>
+</head>
+<body>
+    <h1>Finde deinen Interior Design Style</h1>
+    <div class="deckblatt">
+        <img src="images/deckblatt.jpg" alt="Deckblatt">
+        <p>Starte dein Quiz</p>
+    </div>
+    <form id="quizForm">
+<div class="question">
+<h2>Frage 1: Welche Farbpalette spricht dich am meisten an?</h2>
+<div class="answers">
+
+        <label>
+            <input type="radio" name="q1" value="Scandinavian">
+            <img src="images/q01_a01_scandinavian-livingroom.jpg" alt="Antwort A">
+            <div>·       A) Weiß, Grau, Hellblau</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q1" value="Japandi">
+            <img src="images/q01_a02_japandi-livingroom.jpg" alt="Antwort B">
+            <div>·       B) Beige, Sand, Schwarz</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q1" value="Mediterranean">
+            <img src="images/q01_a03_mediterranean-livingroom.jpg" alt="Antwort C">
+            <div>·       C) Terrakotta, Ocker, Türkis</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q1" value="Industrial">
+            <img src="images/q01_a04_industrial-livingroom.jpg" alt="Antwort D">
+            <div>·       D) Schwarz, Grau, Rostrot</div>
+        </label>
+        </div>
+</div>
+<div class="question">
+<h2>Frage 2: Welcher dieser Räume fühlt sich für dich wie "Zuhause" an?</h2>
+<div class="answers">
+
+        <label>
+            <input type="radio" name="q2" value="Japandi">
+            <img src="images/q02_a01_japandi-bedroom.jpg" alt="Antwort A">
+            <div>·       A) Helle Holzmöbel, viel Licht, Pflanzen</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q2" value="Mediterranean">
+            <img src="images/q02_a02_mediterranean-bedroom.jpg" alt="Antwort B">
+            <div>·       B) Klare Linien, wenig Deko, neutrale Farben</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q2" value="Industrial">
+            <img src="images/q02_a03_industrial-bedroom.jpg" alt="Antwort C">
+            <div>·       C) Vintage-Möbel, warme Farben, Teppiche</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q2" value="Boho">
+            <img src="images/q02_a04_bohemian-bedroom.jpg" alt="Antwort D">
+            <div>·       D) Gemütlich, rustikal, Holzbalken</div>
+        </label>
+        </div>
+</div>
+<div class="question">
+<h2>Frage 3: Welches Material würdest du am liebsten in deinem Zuhause sehen?</h2>
+<div class="answers">
+
+        <label>
+            <input type="radio" name="q3" value="Mediterranean">
+            <img src="images/q03_a01_mediterranean-kitchen.jpg" alt="Antwort A">
+            <div>·       A) Naturholz</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q3" value="Industrial">
+            <img src="images/q03_a02_industrial-kitchen.jpg" alt="Antwort B">
+            <div>·       B) Beton & Metall</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q3" value="Boho">
+            <img src="images/q03_a03_bohemian-kitchen.jpg" alt="Antwort C">
+            <div>·       C) Leinen & Rattan</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q3" value="Minimalism">
+            <img src="images/q03_a04_minimalist-kitchen.jpg" alt="Antwort D">
+            <div>·       D) Samt & Marmor</div>
+        </label>
+        </div>
+</div>
+<div class="question">
+<h2>Frage 4: Wie sieht dein Traumsofa aus?</h2>
+<div class="answers">
+
+        <label>
+            <input type="radio" name="q4" value="Industrial">
+            <img src="images/q04_a01_industrial-livingroom.jpg" alt="Antwort A">
+            <div>·       A) Schlicht, hellgrau, mit Holzfüßen</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q4" value="Boho">
+            <img src="images/q04_a02_bohemian-livingroom.jpg" alt="Antwort B">
+            <div>·       B) Tiefer Sitz, Leinenbezug, erdig</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q4" value="Minimalism">
+            <img src="images/q04_a03_minimalist-livingroom.jpg" alt="Antwort C">
+            <div>·       C) Bunt gemustert, viele Kissen</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q4" value="Contemporary">
+            <img src="images/q04_a04_modern-livingroom.jpg" alt="Antwort D">
+            <div>·       D) Dunkel, aus Leder oder Samt</div>
+        </label>
+        </div>
+</div>
+<div class="question">
+<h2>Frage 5: Was ist dir bei der Einrichtung am wichtigsten?</h2>
+<div class="answers">
+
+        <label>
+            <input type="radio" name="q5" value="Boho">
+            <img src="images/q05_a01_bohemian-office.jpg" alt="Antwort A">
+            <div>·       A) Funktionalität & Ordnung</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q5" value="Minimalism">
+            <img src="images/q05_a02_minimalist-office.jpg" alt="Antwort B">
+            <div>·       B) Gemütlichkeit & Wärme</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q5" value="Contemporary">
+            <img src="images/q05_a03_modern-office.jpg" alt="Antwort C">
+            <div>·       C) Eleganz & Zeitlosigkeit</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q5" value="Farmhouse">
+            <img src="images/q05_a04_rustic-office.jpg" alt="Antwort D">
+            <div>·       D) Charakter & Geschichte</div>
+        </label>
+        </div>
+</div>
+<div class="question">
+<h2>Frage 6: Welche Art von Beleuchtung bevorzugst du?</h2>
+<div class="answers">
+
+        <label>
+            <input type="radio" name="q6" value="Minimalism">
+            <img src="images/q06_a01_minimalist-hallway.jpg" alt="Antwort A">
+            <div>·       A) Schlichte Pendelleuchten aus Glas oder Metall</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q6" value="Contemporary">
+            <img src="images/q06_a02_modern-hallway.jpg" alt="Antwort B">
+            <div>·       B) Warmes, indirektes Licht mit natürlichen Materialien</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q6" value="Farmhouse">
+            <img src="images/q06_a03_rustic-hallway.jpg" alt="Antwort C">
+            <div>·       C) Kronleuchter oder klassische Lampen</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q6" value="Traditional">
+            <img src="images/q06_a04_vintage-hallway.jpg" alt="Antwort D">
+            <div>·       D) Minimalistische LED-Leisten</div>
+        </label>
+        </div>
+</div>
+<div class="question">
+<h2>Frage 7: Wie sieht dein perfekter Esstisch aus?</h2>
+<div class="answers">
+
+        <label>
+            <input type="radio" name="q7" value="Contemporary">
+            <img src="images/q07_a01_modern-diningroom.jpg" alt="Antwort A">
+            <div>·       A) Großer Holztisch mit rustikalem Charme</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q7" value="Farmhouse">
+            <img src="images/q07_a02_rustic-diningroom.jpg" alt="Antwort B">
+            <div>·       B) Runde Form, helles Holz, schlichtes Design</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q7" value="Traditional">
+            <img src="images/q07_a03_vintage-diningroom.jpg" alt="Antwort C">
+            <div>·       C) Vintage mit schrägen Beinen</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q7" value="Midcentury">
+            <img src="images/q07_a04_midcentury-diningroom.jpg" alt="Antwort D">
+            <div>·       D) Marmorplatte mit Metallgestell</div>
+        </label>
+        </div>
+</div>
+<div class="question">
+<h2>Frage 8: Welche Art von Kunst oder Deko spricht dich an?</h2>
+<div class="answers">
+
+        <label>
+            <input type="radio" name="q8" value="Farmhouse">
+            <img src="images/q08_a01_rustic-livingroom.jpg" alt="Antwort A">
+            <div>·       A) Abstrakte Formen, geometrisch</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q8" value="Traditional">
+            <img src="images/q08_a02_vintage-livingroom.jpg" alt="Antwort B">
+            <div>·       B) Naturinspirierte Motive, Pflanzen, Makramee</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q8" value="Midcentury">
+            <img src="images/q08_a03_midcentury-livingroom.jpg" alt="Antwort C">
+            <div>·       C) Klassische Gemälde oder Spiegel mit Goldrahmen</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q8" value="Scandinavian">
+            <img src="images/q08_a04_scandinavian-livingroom.jpg" alt="Antwort D">
+            <div>·       D) Schwarz-weiß Fotografie, Typografie</div>
+        </label>
+        </div>
+</div>
+<div class="question">
+<h2>Frage 9: Wie würdest du dein Schlafzimmer gestalten?</h2>
+<div class="answers">
+
+        <label>
+            <input type="radio" name="q9" value="Traditional">
+            <img src="images/q09_a01_vintage-bedroom.jpg" alt="Antwort A">
+            <div>·       A) Hell, luftig, mit Leinenbettwäsche</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q9" value="Midcentury">
+            <img src="images/q09_a02_midcentury-bedroom.jpg" alt="Antwort B">
+            <div>·       B) Dunkle Farben, schwere Stoffe, dramatisch</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q9" value="Scandinavian">
+            <img src="images/q09_a03_scandinavian-bedroom.jpg" alt="Antwort C">
+            <div>·       C) Viele Kissen, Teppiche, gemütlich-chaotisch</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q9" value="Japandi">
+            <img src="images/q09_a04_japandi-bedroom.jpg" alt="Antwort D">
+            <div>·       D) Aufgeräumt, klare Linien, wenig Möbel</div>
+        </label>
+        </div>
+</div>
+<div class="question">
+<h2>Frage 10: Was ist dein Traumurlaubsort?</h2>
+<div class="answers">
+
+        <label>
+            <input type="radio" name="q10" value="Midcentury">
+            <img src="images/q10_a01_midcentury-bathroom.jpg" alt="Antwort A">
+            <div>·       A) Skandinavische Hütte im Wald</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q10" value="Scandinavian">
+            <img src="images/q10_a02_scandinavian-bathroom.jpg" alt="Antwort B">
+            <div>·       B) Mediterranes Haus mit Meerblick</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q10" value="Japandi">
+            <img src="images/q10_a03_japandi-bathroom.jpg" alt="Antwort C">
+            <div>·       C) Japanisches Ryokan mit Zen-Garten</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q10" value="Mediterranean">
+            <img src="images/q10_a04_mediterranean-bathroom.jpg" alt="Antwort D">
+            <div>·       D) Bauernhaus auf dem Land</div>
+        </label>
+        </div>
+</div>
+<div class="question">
+<h2>Frage 11: Wie sieht dein perfekter Bodenbelag aus?</h2>
+<div class="answers">
+
+        <label>
+            <input type="radio" name="q11" value="Scandinavian">
+            <img src="images/q11_a01_scandinavian-livingroom.jpg" alt="Antwort A">
+            <div>·       A) Helles Holz</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q11" value="Japandi">
+            <img src="images/q11_a02_japandi-livingroom.jpg" alt="Antwort B">
+            <div>·       B) Fliesen in Naturtönen</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q11" value="Mediterranean">
+            <img src="images/q11_a03_mediterranean-livingroom.jpg" alt="Antwort C">
+            <div>·       C) Sichtbeton oder dunkles Holz</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q11" value="Industrial">
+            <img src="images/q11_a04_industrial-livingroom.jpg" alt="Antwort D">
+            <div>·       D) Teppich oder Parkett mit Ornamenten</div>
+        </label>
+        </div>
+</div>
+<div class="question">
+<h2>Frage 12: Welche Art von Möbeln bevorzugst du?</h2>
+<div class="answers">
+
+        <label>
+            <input type="radio" name="q12" value="Japandi">
+            <img src="images/q12_a01_japandi-diningroom.jpg" alt="Antwort A">
+            <div>·       A) Schlicht, funktional, aus hellem Holz</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q12" value="Mediterranean">
+            <img src="images/q12_a02_mediterranean-diningroom.jpg" alt="Antwort B">
+            <div>·       B) Vintage-Stücke mit Charakter</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q12" value="Industrial">
+            <img src="images/q12_a03_industrial-diningroom.jpg" alt="Antwort C">
+            <div>·       C) Rustikale Möbel mit Gebrauchsspuren</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q12" value="Boho">
+            <img src="images/q12_a04_bohemian-diningroom.jpg" alt="Antwort D">
+            <div>·       D) Glatte Oberflächen, klare Linien</div>
+        </label>
+        </div>
+</div>
+<div class="question">
+<h2>Frage 13: Wie sieht deine Traumküche aus?</h2>
+<div class="answers">
+
+        <label>
+            <input type="radio" name="q13" value="Mediterranean">
+            <img src="images/q13_a01_mediterranean-kitchen.jpg" alt="Antwort A">
+            <div>·       A) Weiß, offen, mit Holzakzenten</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q13" value="Industrial">
+            <img src="images/q13_a02_industrial-kitchen.jpg" alt="Antwort B">
+            <div>·       B) Dunkel, mit Metall und Stein</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q13" value="Boho">
+            <img src="images/q13_a03_bohemian-kitchen.jpg" alt="Antwort C">
+            <div>·       C) Bunte Fliesen, offene Regale</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q13" value="Minimalism">
+            <img src="images/q13_a04_minimalist-kitchen.jpg" alt="Antwort D">
+            <div>·       D) Klassisch mit Rahmenfronten</div>
+        </label>
+        </div>
+</div>
+<div class="question">
+<h2>Frage 14: Welche Textilien gefallen dir am besten?</h2>
+<div class="answers">
+
+        <label>
+            <input type="radio" name="q14" value="Industrial">
+            <img src="images/q14_a01_industrial-bedroom.jpg" alt="Antwort A">
+            <div>·       A) Leinen, Baumwolle, Naturstoffe</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q14" value="Boho">
+            <img src="images/q14_a02_bohemian-bedroom.jpg" alt="Antwort B">
+            <div>·       B) Samt, Brokat, schwere Stoffe</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q14" value="Minimalism">
+            <img src="images/q14_a03_minimalist-bedroom.jpg" alt="Antwort C">
+            <div>·       C) Muster, Fransen, Ethno-Stil</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q14" value="Contemporary">
+            <img src="images/q14_a04_modern-bedroom.jpg" alt="Antwort D">
+            <div>·       D) Glatte, einfarbige Stoffe</div>
+        </label>
+        </div>
+</div>
+<div class="question">
+<h2>Frage 15: Wie würdest du dein Badezimmer gestalten?</h2>
+<div class="answers">
+
+        <label>
+            <input type="radio" name="q15" value="Boho">
+            <img src="images/q15_a01_bohemian-bathroom.jpg" alt="Antwort A">
+            <div>·       A) Minimalistisch, mit Naturstein</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q15" value="Minimalism">
+            <img src="images/q15_a02_minimalist-bathroom.jpg" alt="Antwort B">
+            <div>·       B) Verspielt, mit bunten Fliesen</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q15" value="Contemporary">
+            <img src="images/q15_a03_modern-bathroom.jpg" alt="Antwort C">
+            <div>·       C) Klassisch, mit Marmor und Gold</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q15" value="Farmhouse">
+            <img src="images/q15_a04_rustic-bathroom.jpg" alt="Antwort D">
+            <div>·       D) Modern, mit Glas und Beton</div>
+        </label>
+        </div>
+</div>
+<div class="question">
+<h2>Frage 16: Welche Pflanzen passen zu deinem Stil?</h2>
+<div class="answers">
+
+        <label>
+            <input type="radio" name="q16" value="Minimalism">
+            <img src="images/q16_a01_minimalist-garden.jpg" alt="Antwort A">
+            <div>·       A) Monstera, Palmen, Hängepflanzen</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q16" value="Contemporary">
+            <img src="images/q16_a02_modern-garden.jpg" alt="Antwort B">
+            <div>·       B) Bonsai, Bambus, Gräser</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q16" value="Farmhouse">
+            <img src="images/q16_a03_rustic-garden.jpg" alt="Antwort C">
+            <div>·       C) Lavendel, Olivenbaum</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q16" value="Traditional">
+            <img src="images/q16_a04_vintage-garden.jpg" alt="Antwort D">
+            <div>·       D) Keine Pflanzen, clean</div>
+        </label>
+        </div>
+</div>
+<div class="question">
+<h2>Frage 17: Wie sieht dein Traumarbeitsplatz aus?</h2>
+<div class="answers">
+
+        <label>
+            <input type="radio" name="q17" value="Contemporary">
+            <img src="images/q17_a01_modern-office.jpg" alt="Antwort A">
+            <div>·       A) Aufgeräumt, mit viel Licht</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q17" value="Farmhouse">
+            <img src="images/q17_a02_rustic-office.jpg" alt="Antwort B">
+            <div>·       B) Vintage-Schreibtisch, Bücherregal</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q17" value="Traditional">
+            <img src="images/q17_a03_vintage-office.jpg" alt="Antwort C">
+            <div>·       C) Loft-Stil mit Metallregalen</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q17" value="Midcentury">
+            <img src="images/q17_a04_midcentury-office.jpg" alt="Antwort D">
+            <div>·       D) Kreatives Chaos mit Deko</div>
+        </label>
+        </div>
+</div>
+<div class="question">
+<h2>Frage 18: Welche Accessoires dürfen nicht fehlen?</h2>
+<div class="answers">
+
+        <label>
+            <input type="radio" name="q18" value="Farmhouse">
+            <img src="images/q18_a01_rustic-windowsill.jpg" alt="Antwort A">
+            <div>·       A) Keramikvasen, Holzschalen</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q18" value="Traditional">
+            <img src="images/q18_a02_vintage-windowsill.jpg" alt="Antwort B">
+            <div>·       B) Alte Bücher, Globus, Bilderrahmen</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q18" value="Midcentury">
+            <img src="images/q18_a03_midcentury-windowsill.jpg" alt="Antwort C">
+            <div>·       C) Makramee, Traumfänger, Körbe</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q18" value="Scandinavian">
+            <img src="images/q18_a04_scandinavian-windowsill.jpg" alt="Antwort D">
+            <div>·       D) Metallobjekte, Uhren, Technik</div>
+        </label>
+        </div>
+</div>
+<div class="question">
+<h2>Frage 19: Wie wichtig ist dir Nachhaltigkeit beim Einrichten?</h2>
+<div class="answers">
+
+        <label>
+            <input type="radio" name="q19" value="Traditional">
+            <img src="images/q19_a01_vintage-hallway.jpg" alt="Antwort A">
+            <div>·       A) Sehr wichtig – natürliche Materialien</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q19" value="Midcentury">
+            <img src="images/q19_a02_midcentury-hallway.jpg" alt="Antwort B">
+            <div>·       B) Upcycling & Vintage</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q19" value="Scandinavian">
+            <img src="images/q19_a03_scandinavian-hallway.jpg" alt="Antwort C">
+            <div>·       C) Langlebige Qualität</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q19" value="Japandi">
+            <img src="images/q19_a04_japandi-hallway.jpg" alt="Antwort D">
+            <div>·       D) Weniger wichtig</div>
+        </label>
+        </div>
+</div>
+<div class="question">
+<h2>Frage 20: Welches dieser Zitate passt zu dir?</h2>
+<div class="answers">
+
+        <label>
+            <input type="radio" name="q20" value="Midcentury">
+            <img src="images/q20_a01_midcentury-livingroom.jpg" alt="Antwort A">
+            <div>·       A) „Weniger ist mehr.“</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q20" value="Scandinavian">
+            <img src="images/q20_a02_scandinavian-livingroom.jpg" alt="Antwort B">
+            <div>·       B) „Mein Zuhause ist mein Spiegel.“</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q20" value="Japandi">
+            <img src="images/q20_a03_japandi-livingroom.jpg" alt="Antwort C">
+            <div>·       C) „Form folgt Funktion.“</div>
+        </label>
+        
+        <label>
+            <input type="radio" name="q20" value="Mediterranean">
+            <img src="images/q20_a04_mediterranean-livingroom.jpg" alt="Antwort D">
+            <div>·       D) „Stil ist zeitlos.“</div>
+        </label>
+        </div>
+</div>
+
+    <button type="button" onclick="calculateResult()">Ergebnis anzeigen</button>
+    </form>
+    <div class="result" id="result"></div>
+    <script>
+        function calculateResult() {
+            const form = document.getElementById('quizForm');
+            const formData = new FormData(form);
+            const scores = {};
+            for (let [key, value] of formData.entries()) {
+                scores[value] = (scores[value] || 0) + 1;
+            }
+            let maxScore = 0;
+            let bestStyle = "";
+            for (let style in scores) {
+                if (scores[style] > maxScore) {
+                    maxScore = scores[style];
+                    bestStyle = style;
+                }
+            }
+            const descriptions = {
+"Scandinavian": "Der skandinavische Stil ist bekannt für seine Helligkeit, Funktionalität und Schlichtheit. Er verwendet helle Farben, natürliche Materialien wie Holz und klare Linien. Gemütlichkeit („Hygge“) spielt eine zentrale Rolle, oft ergänzt durch Textilien wie Decken und Kissen. Pflanzen und minimalistische Dekorationen sorgen für eine warme, einladende Atmosphäre.",
+"Japandi": "Japandi ist eine Fusion aus japanischem Minimalismus und skandinavischer Gemütlichkeit. Der Stil setzt auf klare Formen, natürliche Materialien und eine ruhige Farbpalette mit Erdtönen. Funktionalität und Ästhetik stehen im Einklang, wobei jedes Möbelstück bewusst gewählt wird. Weniger ist mehr – die Räume wirken harmonisch und ausgeglichen.",
+"Boho": "Der Boho-Stil ist kreativ, frei und unkonventionell. Er kombiniert verschiedene Kulturen, Muster und Farben zu einem lebendigen Gesamtbild. Natürliche Materialien wie Rattan, Makramee und Holz treffen auf bunte Textilien und Vintage-Elemente. Pflanzen, Teppiche und persönliche Deko machen den Raum individuell und gemütlich.",
+"Mediterranean": "Mediterranes Design erinnert an die Leichtigkeit des Südens. Warme Farben wie Terrakotta, Sand und Blau dominieren, ergänzt durch Naturmaterialien wie Stein, Holz und Leinen. Bögen, Fliesen und rustikale Möbel verleihen dem Raum Charakter. Der Stil strahlt Wärme, Entspannung und Lebensfreude aus.",
+"Contemporary": "Contemporary Design ist modern, klar und zeitgemäß. Es verwendet neutrale Farben, glatte Oberflächen und innovative Materialien. Der Stil ist flexibel und passt sich aktuellen Trends an, ohne überladen zu wirken. Licht, Raum und Form stehen im Mittelpunkt, oft mit einem Hauch von Eleganz.",
+"Farmhouse": "Der Farmhouse-Stil ist rustikal und charmant, inspiriert vom ländlichen Leben. Holz, Metall und Vintage-Elemente prägen das Design, oft kombiniert mit weißen oder neutralen Farben. Gemütlichkeit steht im Vordergrund – mit großen Esstischen, offenen Regalen und kuscheligen Textilien. Der Stil wirkt bodenständig und einladend.",
+"Midcentury": "Midcentury Design stammt aus den 1950er–60er Jahren und zeichnet sich durch klare Linien, organische Formen und funktionale Möbel aus. Es verwendet warme Holzarten, kräftige Farben und ikonische Möbelstücke. Der Stil ist zeitlos und elegant, oft mit einem Retro-Touch. Wenige, aber gezielte Deko-Elemente runden das Bild ab.",
+"Minimalism": "Minimalismus setzt auf Reduktion und Klarheit. Wenige Möbel, neutrale Farben und viel freie Fläche schaffen Ruhe und Ordnung. Funktionalität steht im Vordergrund, jedes Element hat seinen Zweck. Der Stil wirkt modern, aufgeräumt und fördert ein bewusstes Wohnen ohne Ablenkung.",
+"Traditional": "Der traditionelle Stil ist klassisch, elegant und detailreich. Dunkle Hölzer, schwere Stoffe und kunstvolle Möbel prägen das Design. Symmetrie und Struktur sind wichtig, oft ergänzt durch antike oder historische Elemente. Der Stil vermittelt Beständigkeit, Komfort und eine gewisse formale Schönheit.",
+"Industrial": "Industrial Design ist inspiriert von alten Fabriken und Lagerhäusern. Sichtbare Materialien wie Beton, Metall und Backstein sind typisch, kombiniert mit funktionalen Möbeln. Die Farbpalette ist meist neutral, mit Grau-, Schwarz- und Brauntönen. Der Stil wirkt urban, rau und gleichzeitig stilvoll.",
+
+            };
+            const resultDiv = document.getElementById('result');
+            if (bestStyle && descriptions[bestStyle]) {
+                resultDiv.innerHTML = `<h2>Dein Stil: ${bestStyle}</h2><p>${descriptions[bestStyle]}</p>`;
+            } else {
+                resultDiv.innerHTML = "<p>Bitte beantworte alle Fragen, um dein Ergebnis zu sehen.</p>";
+            }
+        }
+    </script>
+</body>
+</html>
